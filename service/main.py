@@ -2,12 +2,12 @@ from fastapi import FastAPI
 
 from service.models import ChatRequest
 
-app = FastAPI(title="ai-platform")
+app = FastAPI(title="synapse")
 
 
 @app.get("/health")
 def health() -> dict[str, str]:
-    return {"status": "ok", "service": "ai-platform"}
+    return {"status": "ok", "service": "synapse"}
 
 
 @app.post("/chat")

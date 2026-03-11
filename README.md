@@ -1,4 +1,4 @@
-# ai-platform
+# synapse
 
 Starter AI service architecture for ingestion, embeddings, retrieval, and LLM orchestration.
 
@@ -8,8 +8,8 @@ Create a focused foundation for building practical AI features that integrate wi
 
 ## Role in the ecosystem
 
-- AI runtime behind `master-platform`
-- Consumer of `data-platform`
+- AI runtime behind `orbit`
+- Consumer of `flux`
 - Upstream to `ai-knowledge-system`
 
 ## Status
@@ -25,7 +25,7 @@ Level 2 starter repo with a small FastAPI service shape and architecture docs.
 ## Structure
 
 ```text
-ai-platform/
+synapse/
 ├── docs/
 │   └── architecture.md
 ├── service/
@@ -49,9 +49,9 @@ uvicorn service.main:app --reload
 
 ## Related repositories
 
-- `data-platform`
+- `flux`
 - `ai-knowledge-system`
-- `master-platform`
+- `orbit`
 
 ## Future direction
 
