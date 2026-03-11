@@ -10,7 +10,7 @@ Create a focused foundation for building practical AI features that integrate wi
 
 - AI runtime behind `orbit`
 - Consumer of `flux`
-- Upstream to `ai-knowledge-system`
+- Upstream to `lore`
 
 ## Status
 
@@ -50,7 +50,7 @@ uvicorn service.main:app --reload
 ## Related repositories
 
 - `flux`
-- `ai-knowledge-system`
+- `lore`
 - `orbit`
 
 ## Future direction
