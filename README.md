@@ -1,58 +1,34 @@
 # synapse
 
-Starter AI service architecture for ingestion, embeddings, retrieval, and LLM orchestration.
-
 ## Purpose
+Integrate intelligence into systems through retrieval, model calls, and workflow-level inference.
 
-Create a focused foundation for building practical AI features that integrate with product systems instead of living as isolated demos.
+## Why it matters
+Without a clear AI layer, intelligence gets bolted on ad hoc and becomes difficult to trace, evaluate, or reuse.
 
-## Role in the ecosystem
+## Scope
+This repo focuses on AI workflows, retrieval-aware service structure, and inference boundaries. It does not try to cover every model or vendor integration.
 
-- AI runtime behind `orbit`
-- Consumer of `flux`
-- Upstream to `lore`
+## System Role
+`synapse` is the AI and ML systems layer for the ecosystem. It connects data, knowledge, and product workflows through practical intelligence features.
 
-## Status
+## System Connections
+- Depends on: `flux` for prepared data and `lore` for grounded retrieval structure.
+- Feeds into: product-facing intelligent features in `summit` and `orbit`.
+- Interacts with: `lore`, `summit`, `flux`.
 
-Level 2 starter repo with a small FastAPI service shape and architecture docs.
+## Core Concepts
+- retrieval flow
+- inference boundaries
+- prompt inputs
+- model orchestration
+- grounded responses
 
-## Tech stack
+## Minimal Artifact
+`service/main.py`, `service/models.py`, and `docs/architecture.md` form the starter AI service example.
 
-- Python
-- FastAPI
-- Pydantic
+## Notes
+The emphasis is on AI that fits into system design, not standalone demos with no operational shape.
 
-## Structure
-
-```text
-synapse/
-├── docs/
-│   └── architecture.md
-├── service/
-│   ├── main.py
-│   └── models.py
-├── .editorconfig
-├── .gitignore
-├── README.md
-├── ROADMAP.md
-└── requirements.txt
-```
-
-## Getting started
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn service.main:app --reload
-```
-
-## Related repositories
-
-- `flux`
-- `lore`
-- `orbit`
-
-## Future direction
-
-Add retrieval adapters, evaluation hooks, and provider abstractions without making the repo depend on every AI library under the sun.
+## Next Steps
+Add provider adapters, evaluation hooks, and clearer retrieval interfaces.
